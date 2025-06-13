@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bbegadim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      background-color: #fefefe;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #d4af37;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .logo h1 {
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    .hero {
+      height: 90vh;
+      background: url('https://via.placeholder.com/1400x800') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero button {
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .collection {
+      padding: 60px 50px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .collection h3 {
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      font-size: 32px;
+    }
+    .items {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 250px;
+      border: 1px solid #d4af37;
+      padding: 15px;
+      background-color: #f9f7f1;
+    }
+    .item img {
+      width: 100%;
+      border-bottom: 1px solid #d4af37;
+      margin-bottom: 10px;
+    }
+    .item p {
+      font-style: italic;
+    }
+    .about, .lookbook, .contact {
+      padding: 60px 50px;
+      text-align: center;
+      background-color: #fffefb;
+    }
+    .about h3, .lookbook h3, .contact h3 {
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      font-size: 28px;
+    }
+    .contact input {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      margin-top: 15px;
+    }
+    .contact button {
+      background-color: #d4af37;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-left: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    footer {
+      background-color: #f4f4f4;
+      padding: 30px 50px;
+      text-align: center;
+      border-top: 2px solid #d4af37;
+    }
+    footer h1 {
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      font-size: 24px;
+    }
+    footer p {
+      margin: 10px 0 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.jpg" alt="bbegadim logo">
+      <h1>bbegadim</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#collection">Shop</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Wear the elegance you deserve</h2>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="collection" id="collection">
+    <h3>Featured Collection</h3>
+    <div class="items">
+      <div class="item">
+        <img src="https://via.placeholder.com/250x350" alt="Product 1">
+        <p>Gold Luxe Blazer</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/250x350" alt="Product 2">
+        <p>Ivory Elegance Dress</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/250x350" alt="Product 3">
+        <p>Golden Hour Suit</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h3>About bbegadim</h3>
+    <p>Born from boldness, built with beauty — bbegadim is more than fashion. It’s a feeling rooted in timeless elegance and heritage styling.</p>
+  </section>
+
+  <section class="lookbook" id="lookbook">
+    <h3>Lookbook</h3>
+    <p>[Insert refined editorial-style gallery images here]</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Stay in Touch</h3>
+    <p>Join the bbegadim club for timeless drops and refined updates</p>
+    <input type="email" placeholder="Your email">
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    <h1>bbegadim</h1>
+    <p>&copy; 2025 bbegadim. All rights reserved.</p>
+  </footer>
+</body>
+</html>
